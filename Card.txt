@@ -1,0 +1,54 @@
+//Adrian Martinez
+//Dynya McKinney
+//Alexander Ruvalcaba
+
+//card class creation
+public class Card {
+
+    private int value;  // Value of card
+    private String suit; // Suit of card 
+    private String rank; // Rank of card
+
+    // Constructor (requirement for assignment)
+    public Card(int value, String suit, String rank) {
+        this.value = value;
+        this.suit = suit;
+        this.rank = rank;
+    }
+
+    // Accessor for value(requirement for assignment)
+    public int getValue() {
+      return value;
+    }
+
+    // Mutator for value(requirement for assignment)
+    public void setValue(int value) {
+      this.value = value;
+    }
+
+    // Accessor for suit(requirement for assignment)
+    public String getSuit() {
+        return suit;
+    }
+
+    // Mutator for suit(requirement for assignment)
+    public void setSuit(String suit) {
+        this.suit = suit;
+    }
+
+    // Accessor for rank (requirement for assignment)
+    public String getRank() {
+        return rank;
+    }
+
+    // Mutator for rank (requirement for assignment)
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    // Method to get string of the card
+    @Override
+    public String toString() {
+        return rank + " of " + suit;
+    }
+}
